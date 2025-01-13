@@ -1,0 +1,18 @@
+@startuml
+class Cartella {
+    +__init__()
+    +genera_cartella()
+    +stampa_cartella()
+}
+
+class Tombola {
+    +__init__(numero_giocatori)
+    +estrai_numero()
+    +controlla_vincite()
+    +stampa_tavolo()
+}
+
+Cartella --> Tombola : utilizza
+Tombola --> Cartella : crea
+
+@enduml
